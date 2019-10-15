@@ -20,11 +20,6 @@ public class ProductRepositoryImpl implements ProductRepository {
         productList.put(product.getId(), product);
     }
 
-    @Override
-    public Product findById(int id) {
-        return productList.get(id);
-
-    }
 
     @Override
     public void edit(int id, Product product) {
@@ -34,6 +29,8 @@ public class ProductRepositoryImpl implements ProductRepository {
     @Override
     public void remove(int id) {
         productList.remove(id);
+
+
     }
 
     @Override

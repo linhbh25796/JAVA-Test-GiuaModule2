@@ -4,12 +4,9 @@ import com.codegym.model.Product;
 import com.codegym.repository.ProductRepository;
 import com.codegym.repository.ProductRepositoryImpl;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
     private ProductRepository productRepository = new ProductRepositoryImpl();
 
     @Override
@@ -23,13 +20,8 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public Product findById(int id) {
-        return null;
-    }
-
-    @Override
     public void edit(int id, Product product) {
-        productRepository.edit(id,product);
+        productRepository.edit(id, product);
     }
 
     @Override
